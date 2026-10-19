@@ -1,15 +1,20 @@
 package com.example.gerenciador_de_estoque_empresarial.infrastructure.entity;
 
 
-import jakarta.persistence.*;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Table;
 import lombok.*;
+import org.springframework.data.annotation.Id;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 @Builder
+@Table(name = "usuario")
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
