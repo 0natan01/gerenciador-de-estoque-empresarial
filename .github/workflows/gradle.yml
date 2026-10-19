@@ -28,4 +28,4 @@ jobs:
         uses: gradle/actions/wrapper-validation@v4
 
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon
+        run: run: ./gradlew build --stacktrace --info
